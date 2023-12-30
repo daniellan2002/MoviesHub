@@ -1,9 +1,8 @@
-# s23-122b-kickin-Daniel Lan
+# MoviesHub-Daniel Lan
 
-### New Repo Name After Split: stadia99-cs122B
 
-# Project 2
-We implemented the substring matching design using LIKE and %
+# Objective 2
+Implemented the substring matching design using LIKE and %
 
 E.g.
 
@@ -17,7 +16,7 @@ params.add("%" + title + "%");
 
 
 
-# Project 3
+# Objective 3
  Optimization strategies:
  1. Create hash table for seen objects. Program don't need to send 40000+ request to sql server to look up if the element already exists in the database. 
  2. Store and track the max ID number on local, so the program don't need to request database each time to fetch the MAX id of the table.
@@ -33,11 +32,11 @@ params.add("%" + title + "%");
 Daniel Lan:
 Build Movie List, Single Movie page, Single Movie page, Search page, Browse Movies Page, Substring-Matching-design. Completed the Java servlet and HTML and JavaScript files. Debugged and fixed mysql connection errors. Added recaptcha, added HTTPS, built dashboard table and stored procedures. 
 
-# Project 4:
+# Objective 4:
 
 ### Fulltext Search
 
-- ✅ Have a main search box on the Main Page (or a separate search page) of the Fabflix website. You can reuse the search box if you already have one from Project 2.
+- ✅ Have a main search box on the Main Page (or a separate search page) of the Fabflix website. You can reuse the search box if you already have one from Objective 2.
 - ✅ Implement full-text search with the query on the movie title.
 - ✅ If the customers click the "Search" button, the site should jump to the Movie List Page that displays the full-text search results.
 - ✅ make a fulltext index on each searchable column
@@ -67,7 +66,7 @@ Build Movie List, Single Movie page, Single Movie page, Search page, Browse Movi
 - ✅ Sessions are maintained by the CookieHandler and CookieManager set in the NetworkManager class.
 - ✅ Movie List Page
 - ✅ Displays a ListView of the movies searched. When a customer clicks on an item, it should show the corresponding Single Movie Page in a new activity.
-- ✅ Each item on the result list should contain the information of a movie: title, year, director, the first 3 genres (hyperlink is optional), the first 3 stars (hyperlink is optional), the same as Project 2.
+- ✅ Each item on the result list should contain the information of a movie: title, year, director, the first 3 genres (hyperlink is optional), the first 3 stars (hyperlink is optional), the same as Objective 2.
 - ✅ Pagination on the search result list. Previous and Next buttons are required, and the page size is limited to 10.
 - ✅ Single Movie Page
 - ✅ Single Movie Page should contain the movie title, year, director, all genres (hyperlink is optional), all stars (hyperlink is optional).
@@ -75,14 +74,14 @@ Build Movie List, Single Movie page, Single Movie page, Search page, Browse Movi
 - ✅ A search box that has the same behavior as the full-text search requirement in task 1 (searching in movie title). Autocomplete is optional.
 
 
-# Project 5
+# Objective 5
 
 - # General
     - #### Team#:
     
     - #### Name: Daniel Lan
     
-    - #### Project 5 Video Demo Link: https://drive.google.com/file/d/1cbmuqDrIZxgCPy3lk1ofUVnCFzojh3ZG/view?usp=sharing
+    - #### Objective 5 Video Demo Link: https://drive.google.com/file/d/1cbmuqDrIZxgCPy3lk1ofUVnCFzojh3ZG/view?usp=sharing
 
     - #### Instruction of deployment: deployed on AWS
 1. Master and Slave Instances:
