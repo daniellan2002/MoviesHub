@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Search</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="search.js"></script>
+</head>
+<body>
+
+<div id="search-container">
+  <h2>Movie Search</h2>
+  <form id="search-form">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title"><br><br>
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year"><br><br>
+    <label for="director">Director:</label>
+    <input type="text" id="director" name="director"><br><br>
+    <label for="star">Star's Name:</label>
+    <input type="text" id="star" name="star"><br><br>
+    <button class="button-28" type="submit" id="search-btn">Search</button>
+    <button class="button-28" type="button" onclick="window.location.href='index.html'">Check Out</button>
+  </form>
+</div>
+<button id="logout-btn" class="button-28" onclick="logout()">Logout</button>
+<button class="button-28" onclick="window.location.href='movielist.html'">Home</button>
+
+
+<div id="movie-list"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>

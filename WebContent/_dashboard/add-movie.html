@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Movie</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="add-movie.js"></script>
+</head>
+<body>
+
+<div id="addMovie-container">
+  <h2>Add Movie</h2>
+
+  <form id="addMovie_form" method="get">
+    <label><b>Title</b></label>
+    <label>
+      <input name="title" type="text" required>
+    </label>
+    <br>
+    <label><b>Director</b></label>
+    <label>
+      <input name="director" type="text" required>
+    </label>
+    <br>
+    <label><b>Year</b></label>
+    <label>
+      <input name="year" type="text" required>
+    </label>
+    <br>
+    <label><b>Star Name</b></label>
+    <label>
+      <input name="star" type="text" required>
+    </label>
+    <br>
+    <label><b>Genre</b></label>
+    <label>
+      <input name="genre" type="text" required>
+    </label>
+    <br>
+    <input class="button-28" type="submit">
+  </form>
+</div>
+<button id="logout-btn" class="button-28" onclick="logout()">Logout</button>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

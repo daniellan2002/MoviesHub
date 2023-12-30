@@ -1,0 +1,78 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fablix</title>
+</head>
+<body>
+
+<h1>Check Out</h1>
+
+
+<p id="sessionID"></p>
+<p id="lastAccessTime"></p>
+
+
+<!--<form ACTION="#" id="cart" METHOD="post">-->
+<!--    <h2>Item Purchased</h2>-->
+<!--    <br>-->
+<!--    <label>-->
+<!--        <input name="item" required="required" type="text">-->
+<!--    </label>-->
+<!--    <input type="submit" VALUE="add">-->
+<!--</form>-->
+
+
+<h1>Start of Table!</h1>
+<table id="cart_table" class="table mt-4">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody id="cart_list">
+    <tfoot>
+    <tr>
+        <td colspan="3">Total:</td>
+        <td id="cart_total"></td>
+    </tr>
+    </tfoot>
+</table>
+
+<!--<form>-->
+<!--    <label for="quantity">Quantity:</label>-->
+<!--    <input type="number" id="quantity" name="quantity" value="1" min="1">-->
+<!--</form>-->
+
+<!--<script>-->
+<!--    function increment() {-->
+<!--        var input = document.getElementById("quantity");-->
+<!--        input.value = parseInt(input.value) + 1;-->
+<!--    }-->
+<!--    function decrement() {-->
+<!--        var input = document.getElementById("quantity");-->
+<!--        if (parseInt(input.value) > 1) {-->
+<!--            input.value = parseInt(input.value) - 1;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='index.js'></script>
+<button id="logout-btn" class="button-28" onclick="logout()">Logout</button>
+<button id="search-btn" class="button-28" onclick="window.location.href='search.html'">Search Movies</button>
+<button id="browse-btn" class="button-28" onclick="window.location.href='browse.html'">Browse Movies</button>
+<button id="payment-btn" class="button-28" onclick="window.location.href='payment.html'">Payment Movies</button>
+
+</body>
+</html>

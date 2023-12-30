@@ -1,0 +1,283 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fablix</title>
+</head>
+<body>
+
+
+<div class="top">
+    <img src="movie-clapper-open.png" alt="Fablix" onclick="window.location.href='index.html'">
+    <h1>Fablix</h1>
+</div>
+
+
+<h1>Metadata</h1>
+<!--<form ACTION="#" id="cart" METHOD="post">-->
+<!--    <h2>Item Purchased</h2>-->
+<!--    <br>-->
+<!--    <label>-->
+<!--        <input name="item" required="required" type="text">-->
+<!--    </label>-->
+<!--    <input type="submit" VALUE="add">-->
+<!--</form>-->
+
+
+<h2>Movies</h2>
+<table id="cart_table" class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>Year</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>Director</td>
+        <td>VARCHAR</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Stars</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>birthYear</td>
+        <td>INT</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Stars-in-Movies</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>StarId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>MovieId</td>
+        <td>VARCHAR</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Genres</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>VARCHAR</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Genres-in-Movies</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>GenreId</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>MovieId</td>
+        <td>VARCHAR</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Creditcards</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>expiration</td>
+        <td>DATE</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Customers</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>CCID</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>VARCHAR</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Sales</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>customerId</td>
+        <td>INT</td>
+    </tr>
+    <tr>
+        <td>movieId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>saleDate</td>
+        <td>DATE</td>
+    </tr>
+    </thead>
+
+</table>
+
+<h2>Ratings</h2>
+<table  class="table mt-4">
+    <thead>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>MovieId</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>rating</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>numVotes</td>
+        <td>INT</td>
+    </tr>
+    </thead>
+
+</table>
+<!--<form>-->
+<!--    <label for="quantity">Quantity:</label>-->
+<!--    <input type="number" id="quantity" name="quantity" value="1" min="1">-->
+<!--</form>-->
+
+<!--<script>-->
+<!--    function increment() {-->
+<!--        var input = document.getElementById("quantity");-->
+<!--        input.value = parseInt(input.value) + 1;-->
+<!--    }-->
+<!--    function decrement() {-->
+<!--        var input = document.getElementById("quantity");-->
+<!--        if (parseInt(input.value) > 1) {-->
+<!--            input.value = parseInt(input.value) - 1;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='index.js'></script>
+<button id="logout-btn" class="button-28" onclick="logout()">Logout</button>
+<button id="search-btn" class="button-28" onclick="window.location.href='../search.html'">Search Movies</button>
+<button id="browse-btn" class="button-28" onclick="window.location.href='../browse.html'">Browse Movies</button>
+<button id="addstar-btn" class="button-28" onclick="window.location.href='add-star.html'">Add Star</button>
+<button id="addmovie-btn" class="button-28" onclick="window.location.href='add-movie.html'">Add Movie</button>
+
+</body>
+</html>
